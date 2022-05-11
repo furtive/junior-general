@@ -3,13 +3,13 @@
 mkdir -p dist
 
 # Minify Javascript
-uglifyjs erisk.js -m toplevel -c -o dist/erisk.js || exit 1
+uglifyjs jg.js -m toplevel -c -o dist/jg.js || exit 1
 # Minify HTML
 html-minifier --minify-css --collapse-whitespace index.html -o dist/index.html
 
 # Zip the whole thing
-ZIP_FILE=erisk.zip 
-ZIPPED_FILES="index.html erisk.js"
+ZIP_FILE=jg.zip 
+ZIPPED_FILES="index.html jg.js"
 
 cd dist
 rm -f $ZIP_FILE
