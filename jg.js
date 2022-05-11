@@ -404,8 +404,8 @@ function transformPoints(points, xm, ym, xd, yd) {
 // 3d projection for the map
 function projectPoint(p) {
 	var x = p[0] / mapWidth, y = p[1] / mapHeight;
-	var alpha = x * .4 + .6;
-	y = y * alpha + 0.5 * (1-alpha);
+	//var alpha = x; // * .4 + .6;
+	//y = y * alpha;// + 0.5 * (1-alpha);
 	return [x*100, y*100];
 }
 
